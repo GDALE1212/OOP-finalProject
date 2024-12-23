@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlyEasy Booking</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+  <!-- start -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-lg font-bold">FlyEasy Booking</h1>
+      <nav class="flex space-x-4">
+        <a href="sign_up.html" class="text-gray-900 hover:text-blue-500">Sign Up</a>
+        <a href="login.html" class="text-gray-900 hover:text-blue-500">Log In</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Sidebar Section -->
+  <div class="flex">
+    <!-- Sidebar -->
+    <aside class="text-white w-1/5 min-h-screen p-4" style="background-color: #2A585E;">
+      <nav class="space-y-4"> 
+        <a href="#Home" class="block hover:bg-teal-700 p-2 rounded">Home</a>
+        <a href="#about-us" class="block hover:bg-teal-700 p-2 rounded">About Us</a>
+        <a href="#Booking" class="block hover:bg-teal-700 p-2 rounded">Booking Confirmation</a>
+      </nav>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="w-4/5">
+      <!-- Hero Section -->
+  <div class="relative bg-gray-800 text-white py-16 px-10 text-center">
+    <h2 class="text-4xl font-bold">Welcome to FlyEasy!</h2>
+    <p class="text-lg mt-4">Find the best deals for your next journey.</p>
+    <div class="mt-6 flex justify-center">
+      <input type="text" placeholder="Search for flights" class="p-3 w-2/3 rounded-l-lg">
+      <button class="bg-blue-500 px-6 py-3 rounded-r-lg text-white">Search</button>
+    </div>
+    <img src="airplane.jpg" alt="Airplane" class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full h-full object-cover opacity-50">
+  </div>
+
+
+
+      <!-- Popular Flights Section -->
+      <section id="Home" class="py-24 px-20">
+        <h3 class="text-2xl font-bold mb-6">Popular Flights</h3>
+        <div class="grid grid-cols-3 gap-6">
+          <!-- Flight Card -->
+          <div class="bg-white rounded-lg shadow-lg p-4 w-64">
+          <div class="bg-gray-100 h-40 rounded-t-lg relative">
+            <span class="absolute top-2 left-2 bg-gray-300 text-black-800 text-sm px-2 py-1 rounded">
+              Limited Offer
+            </span>
+            <p class="absolute inset-0 flex items-center justify-center text-gray-500">
+              Flight to Davao
+            </p><!--number1-->
+          </div>
+            <div class="p-4 border-t">
+            <h3 class="text-lg font-semibold">Davao</h3>
+            <p class="text-xl font-bold text-black"> P 4500</p>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-lg shadow-lg p-4 w-64">
+            <div class="bg-gray-100 h-40 rounded-t-lg relative">
+              <span class="absolute top-2 left-2 bg-gray-300 text-black-800 text-sm px-2 py-1 rounded">
+                Limited Offer
+              </span>
+              <p class="absolute inset-0 flex items-center justify-center text-gray-500">
+               Flight to Cebu
+              </p><!--number2-->
+            </div>
+              <div class="p-4 border-t">
+              <h3 class="text-lg font-semibold text-black">Cebu</h3>
+              <p class="text-xl font-bold text-black">P 3500</p>
+              </div>
+            </div>
+          <div class="bg-white rounded-lg shadow-lg p-4 w-64">
+            <div class="bg-gray-100 h-40 rounded-t-lg relative">
+              <span class="absolute top-2 left-2 bg-gray-300 text-black-800 text-sm px-2 py-1 rounded">
+                Limited Offer
+              </span>
+              <p class="absolute inset-0 flex items-center justify-center text-gray-500">
+                Flight to Bohol
+              </p><!--number3-->
+            </div>
+              <div>
+                <h3 class="text-lg font-semibold text-black">Bohol</h3>
+                <p class="text-xl font-bold text-black">3000</p>
+              </div>
+            </div>
+        </div>
+      </section>
+
+
+
+      <!-- Booking Form Section -->
+    <section id="Booking"> <!--start-->
+      <section class="py-24 px-20">
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h2 class="text-3xl font-bold mb-4">Complete Your Booking</h2>
+          <p class="text-gray-600 mb-6">Enter your details to confirm the booking.</p>
+            <section class="py-10">
+              <div class="max-w-4xl mx-auto bg-white p-6 rounded-lg shadow-md">
+                <div class="border-b border-gray-200 pb-4 mb-6">
+                  <ul class="flex space-x-4">
+                    <li class="font-semibold text-gray-900 border-b-2 border-tea-600">One-way / Round-trip</li>
+                  </ul>
+                </div>
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label for="from" class="block text-sm font-medium text-gray-700">From</label>
+                    <div class="flex items-center border border-gray-500 rounded-lg px-3 py-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h11M9 21V3m0 0L3 10m6-7l6 7" />
+                      </svg>
+                      <input type="text" id="from" name="from" placeholder="Cebu" class="ml-2 block w-full bg-transparent focus:outline-none">
+                    </div>
+                  </div>
+                  <div>
+                    <label for="to" class="block text-sm font-medium text-gray-700">To</label>
+                    <div class="flex items-center border border-gray-500 rounded-lg px-3 py-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 10h11M9 21V3m0 0L3 10m6-7l6 7" />
+                      </svg>
+                      <input type="text" id="to" name="to" placeholder="Davao" class="ml-2 block w-full bg-transparent focus:outline-none">
+                    </div>
+                  </div>
+                  <div>
+                    <label for="departure" class="block text-sm font-medium text-gray-700">Departure date</label>
+                    <div class="flex items-center border border-gray-500 rounded-lg px-3 py-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m0 0H4m4 0h4m-4 4a4 4 0 100 8 4 4 0 100-8z" />
+                      </svg>
+                      <input type="date" id="departure" name="departure" class="ml-2 block w-full bg-transparent focus:outline-none">
+                    </div>
+                  </div>
+                  <div>
+                    <label for="return" class="block text-sm font-medium text-gray-700">Return Date</label>
+                    <div class="flex items-center">
+                      <input type="checkbox" id="return" name="return" class="h-4 w-4 text-blue-600 focus:ring-blue-500 border-gray-500 rounded">
+                      <label for="return" class="ml-2 text-sm text-gray-600">Add return date</label>
+                    </div>
+                  </div>
+                  <div>
+                    <label for="passengers" class="block text-sm font-medium text-gray-700">No. of Passengers</label>
+                    <input type="text" id="passengers" name="passengers" placeholder="1 Adult, 0 Child, 0 Infant (on lap)" class="mt-1 block w-full px-3 py-2 border border-gray-500 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                  </div>
+                  <div>
+                    <label for="seat-class" class="block text-sm font-medium text-gray-700">Seat Class</label>
+                    <select id="seat-class" name="seat-class" class="mt-1 block w-full px-3 py-2 border border-gray-500 rounded-lg shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500">
+                      <option>Economy</option>
+                      <option>Business</option>
+                      <option>First Class</option>
+                    </select>
+                  </div>
+                  <div class="col-span-2 flex justify-end">
+                    <button type="submit" class="bg-gray-900 text-white py-2 px-6 rounded-lg hover:bg-gray-800">Search Flights</button>
+                  </div>
+                </form>
+              </div>
+            </section> <!--end-->
+
+          <div class="mt-20 flex justify-center space-x-4">
+            <button class="w-48 px-6 py-2 border border-gray-300 text-gray-700 rounded-lg hover:bg-gray-600">
+              Back
+            </button>
+            <button class="w-48 px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-black">
+              Confirm Booking
+            </button>
+          </div>
+          
+
+
+
+      <!-- Ticket Generation Section -->
+      <section class="py-48 px-40">
+        <div class="bg-white shadow-md rounded-lg p-6">
+          <h2 class="text-3xl font-bold mb-4">Ticket Generation</h2>
+          <p class="text-gray-600 mb-6">Download your ticket</p>
+          <div class="flex items-center justify-between">
+            <button class="px-6 py-2 bg-gray-900 text-white rounded-lg hover:bg-gray-400">Download Ticket</button>
+            <div class="text-center">
+              <img src="ticket-icon.png" alt="Ticket PDF" class="w-12 h-12 mx-auto mb-2">
+              <p class="text-gray-700">Download your ticket</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- About Us Section -->
+<section id="about-us" class="py-24 px-20 bg-gray-50">
+  <h3 class="text-2xl font-bold mb-6 text-center">About Us</h3>
+  <p class="text-center mb-12 text-lg">We are a team of passionate individuals working together to create the best flight booking experience for you.</p>
+  
+  <div class="grid grid-cols-2 md:grid-cols-4 gap-12">
+    <!-- Member 1 -->
+    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+      <img src="https://via.placeholder.com/150" alt="Member 1" class="w-32 h-32 rounded-full mx-auto mb-4">
+      <h4 class="text-xl font-semibold">John Doe</h4>
+      <p class="text-gray-500 mb-2">Project Manager</p>
+      <p class="text-gray-700">John leads the team, overseeing the project and ensuring everything runs smoothly. He is passionate about delivering the best user experience.</p>
+    </div>
+
+    <!-- Member 2 -->
+    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+      <img src="https://via.placeholder.com/150" alt="Member 2" class="w-32 h-32 rounded-full mx-auto mb-4">
+      <h4 class="text-xl font-semibold">Mateuz Caspillo</h4>
+      <p class="text-gray-500 mb-2">Lead Developer</p>
+      <p class="text-gray-700">Jane is responsible for the technical aspects of the project, handling both the frontend and backend development with expertise in web technologies.</p>
+    </div>
+
+    <!-- Member 3 -->
+    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+      <img src="https://via.placeholder.com/150" alt="Member 3" class="w-32 h-32 rounded-full mx-auto mb-4">
+      <h4 class="text-xl font-semibold">Kei Alvarado</h4>
+      <p class="text-gray-500 mb-2">UX/UI Designer</p>
+      <p class="text-gray-700">Alice is the creative mind behind the user interface and experience design, making sure the website is intuitive, attractive, and user-friendly.</p>
+    </div>
+
+    <!-- Member 4 -->
+    <div class="bg-white rounded-lg shadow-lg p-6 text-center">
+      <img src="https://via.placeholder.com/150" alt="Member 4" class="w-32 h-32 rounded-full mx-auto mb-4">
+      <h4 class="text-xl font-semibold">Bob Lee</h4>
+      <p class="text-gray-500 mb-2">Marketing Specialist</p>
+      <p class="text-gray-700">Bob handles the marketing efforts, ensuring that the website reaches a wider audience and delivers effective campaigns to attract users.</p>
+    </div>
+  </div>
+</section>
+
+
+
+    </main>
+  </div>
+</body>
+</html>
